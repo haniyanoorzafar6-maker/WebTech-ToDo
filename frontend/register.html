@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | WebTech To-Do</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+    <main class="auth-card wide">
+        <div class="brand-block">
+            <span class="brand-mark">WT</span>
+            <div>
+                <h1>Create account</h1>
+                <p>Register once, then keep your own to-do records separate.</p>
+            </div>
+        </div>
+
+        <form id="registerForm" class="form-panel" novalidate>
+            <div id="message" class="message" aria-live="polite"></div>
+
+            <label for="fullName">Full name</label>
+            <input type="text" id="fullName" name="fullName" placeholder="Your full name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Minimum 6 characters" required>
+
+            <label for="confirmPassword">Confirm password</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Re-enter password" required>
+
+            <button type="submit" class="primary-btn">Register</button>
+        </form>
+
+        <p class="switch-link">Already registered? <a href="login.html">Login</a></p>
+    </main>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>

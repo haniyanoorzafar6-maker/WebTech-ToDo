@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add/Edit Todo | WebTech To-Do</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="topbar compact">
+        <div>
+            <p class="eyebrow">Task form</p>
+            <h1 id="pageTitle">Add Todo</h1>
+        </div>
+        <nav class="top-actions">
+            <a class="ghost-btn link-btn" href="index.html">Back to List</a>
+        </nav>
+    </header>
+
+    <main class="form-page">
+        <form id="todoForm" class="form-panel todo-form" novalidate>
+            <div id="message" class="message" aria-live="polite"></div>
+
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" placeholder="Example: Complete database assignment" required>
+
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="6" placeholder="Write task details"></textarea>
+
+            <label class="check-row" for="isCompleted">
+                <input type="checkbox" id="isCompleted" name="isCompleted">
+                <span>Mark as completed</span>
+            </label>
+
+            <div class="form-actions">
+                <button type="submit" class="primary-btn">Save Todo</button>
+                <a href="index.html" class="ghost-btn link-btn">Cancel</a>
+            </div>
+        </form>
+    </main>
+
+    <script src="js/add-edit.js"></script>
+</body>
+</html>

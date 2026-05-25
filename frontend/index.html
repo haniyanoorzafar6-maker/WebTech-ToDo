@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Dos | WebTech To-Do</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header class="topbar">
+        <div>
+            <p class="eyebrow">Database Connectivity Assignment</p>
+            <h1>Simple To-Do List</h1>
+            <p id="welcomeText" class="muted"></p>
+        </div>
+        <nav class="top-actions">
+            <a class="primary-btn" href="add-edit.html">Add New Todo</a>
+            <button id="logoutBtn" class="ghost-btn" type="button">Logout</button>
+        </nav>
+    </header>
+
+    <main class="page-shell">
+        <section class="summary-strip">
+            <div>
+                <span id="totalCount">0</span>
+                <p>Total tasks</p>
+            </div>
+            <div>
+                <span id="completedCount">0</span>
+                <p>Completed</p>
+            </div>
+            <div>
+                <span id="pendingCount">0</span>
+                <p>Pending</p>
+            </div>
+        </section>
+
+        <section>
+            <div id="message" class="message" aria-live="polite"></div>
+            <div id="todoList" class="todo-grid"></div>
+            <div id="emptyState" class="empty-state" hidden>
+                <h2>No tasks yet</h2>
+                <p>Add your first task to see records loaded from SQL Server.</p>
+                <a class="primary-btn" href="add-edit.html">Add Todo</a>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/todos.js"></script>
+</body>
+</html>

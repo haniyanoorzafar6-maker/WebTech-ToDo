@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | WebTech To-Do</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="auth-page">
+    <main class="auth-card">
+        <div class="brand-block">
+            <span class="brand-mark">WT</span>
+            <div>
+                <h1>Welcome back</h1>
+                <p>Login to manage your personal task list.</p>
+            </div>
+        </div>
+
+        <form id="loginForm" class="form-panel" novalidate>
+            <div id="message" class="message" aria-live="polite"></div>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter password" required>
+
+            <button type="submit" class="primary-btn">Login</button>
+        </form>
+
+        <p class="switch-link">New here? <a href="register.html">Create an account</a></p>
+    </main>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>
