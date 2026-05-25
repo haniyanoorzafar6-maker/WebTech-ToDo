@@ -141,17 +141,6 @@ If you change the backend URL or port, update `API_BASE_URL` at the top of these
 | PUT | `/api/todos/{id}` | Update an existing todo |
 | DELETE | `/api/todos/{id}?userId={userId}` | Delete a todo |
 
-## Screenshots
-
-Add screenshots here before submission:
-
-- Login page screenshot
-- Register page screenshot
-- Main to-do list page screenshot
-- Add/Edit todo page screenshot
-- SQL Server database table screenshot
-- Swagger/API test screenshot
-
 ## Submission Note
 
 GitHub repository creation and upload are not included in this project. Submit or upload the project manually as required by your assignment instructions.
